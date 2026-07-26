@@ -1,23 +1,22 @@
 import { useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './ProductCard.css'
 
-function ProductCard({ product }) {
+function ProductCard({ product, categoryId }) {
   const navigate = useNavigate()
-  const { category } = useParams()
 
   const images = product.images && product.images.length > 0 ? product.images : []
   const [activeImage, setActiveImage] = useState(0)
   const [imgError, setImgError] = useState(false)
 
   const handleThumbnailClick = (e, i) => {
-    e.stopPropagation() // prevent card click navigation when picking a thumbnail
+    e.stopPropagation()
     setActiveImage(i)
     setImgError(false)
   }
 
   const goToDetail = () => {
-    navigate(`/products/${category}/${product.id}`)
+    navigate(`/products/${categoryId}/${product.id}`)
   }
 
   return (
