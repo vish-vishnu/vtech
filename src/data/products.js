@@ -7,10 +7,10 @@ export const categories = [
         id: 1,
         name: '2.1 ch Digital Amplifier',
         images: [
-          '/src/assets/products/2.1.1.jpg',
-          '/src/assets/products/2.1.2.jpg',
-          '/src/assets/products/2.1.3.jpg',
-          '/src/assets/products/2.1.4.jpg'],
+          '/products/2.1.1.jpg',
+          '/products/2.1.2.jpg',
+          '/products/2.1.3.jpg',
+          '/products/2.1.4.jpg'],
         description: 'Short product description goes here.',
         // CLIENT: fill in real specifications
         specifications: [
@@ -28,10 +28,10 @@ export const categories = [
         id: 2,
         name: '5.1 ch Digital 16* 2 Display Dolby Based Basic Amplifier',
         images: [
-          '/src/assets/products/5.1.1.jpg',
-          '/src/assets/products/5.1.1.jpg',
-          '/src/assets/products/5.1.1.jpg',
-          '/src/assets/products/5.1.1.jpg'
+          '/products/5.1.1.jpg',
+          '/products/5.1.1.jpg',
+          '/products/5.1.1.jpg',
+          '/products/5.1.1.jpg'
         ],
         description: 'Short product description goes here.',
         specifications: [],
