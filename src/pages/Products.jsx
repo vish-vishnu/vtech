@@ -45,8 +45,7 @@ function Products() {
       <div className="products-grid">
         {activeCategory && activeCategory.items.length > 0 ? (
           activeCategory.items.map((item) => (
-            <ProductCard key={item.id} product={item} />
-          ))
+            <ProductCard key={item.id} product={item} categoryId={activeTab} />))
         ) : (
           <p className="no-products">
             No products added yet in this category.
