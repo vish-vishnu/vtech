@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <NavLink to="/" className="logo">
-          <img src="/src/assets/logo.png" alt="" className='logo_img' />
+          <img src="/logo.png" alt="" className='logo_img' />
           <h4>V TECH <span>AUDIO</span></h4>
         </NavLink>
 
